@@ -20,7 +20,7 @@
     <a href="/">NEWS AND EVENTS</a>
     <a href="/">CONTACT</a>
   </nav>
-   <main>
+   <main> changes
     <section>
       <h1>Welcome to the Thai Hoa Mui Ne Resort</h1>
     </section>
@@ -31,8 +31,14 @@
       </h2>
     </article>
     <br>
-   <img src="" alt="Scenic photo of ocean"></img>
+   {{#if img_src}}
+    <img src="{{{img_src}}}" alt="scenic photo of ocean"/>
+  {{/if}}
    <br>
   </main>
 </body>
+
+{{!-- data = {
+         img_src: base64img.base64Sync('./assets/img/test.png');
+       } --}}
 
