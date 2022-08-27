@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: ;
+    --secondary: ;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FAEE9C ;
+
+}
