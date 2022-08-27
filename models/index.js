@@ -1,13 +1,15 @@
 const User = require('./User');
 const Room = require('./Room');
 
-User.hasMany(Room, {
+user.hasMany(room, {
+
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
 });
 
-Room.belongsTo(User, {
+room.belongsTo(user, {
+
   foreignKey: 'user_id',
 });
 
-module.exports = { User, Room };
+module.exports = { user, room };
