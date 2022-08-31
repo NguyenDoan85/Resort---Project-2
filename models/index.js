@@ -1,12 +1,12 @@
-const user = require('./user');
-const room = require('./room');
+const User = require('./User');
+const Room = require('./Room');
 
-user.hasMany(room, {
+User.hasMany(Room, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
 });
 
-room.belongsTo(user, {
+Room.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
