@@ -56,7 +56,8 @@ article {
      text-align: center;
      color: white;
     }
-.centered {
+
+    .centered {
      position: absolute;
      top: 50%;
      left: 50%;
