@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    background-color: white;
+    background-color: #fffcee;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -39,14 +39,27 @@ nav a :hover {
     color:#ff8914;
 }
 
-/* article {
+article {
     padding: 46px 0 20px;
     text-align: center;
     color: #1c1b1b;
     line-height: 1.8;
     font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 1 rem;
     font-weight: normal;
     font-style: normal;
+    background-color: #fffcee;
 }
- */
+ 
+.mainText {
+     position: relative;
+     text-align: center;
+     color: white;
+    }
+.centered {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+    }
+
