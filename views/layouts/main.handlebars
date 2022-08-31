@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head></head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thai Hoa Mui Ne Resort</title>
-  {{#each css}}
-        <link rel="stylesheet" href="/css/{{this}}">
-    {{/each}}
-  {{!-- <link rel="stylesheet" href="/css/style.css"> 
-  <link rel="stylesheet" href="/public/css/style.css">
-  <link rel="stylesheet" href="..public/css/style.css">--}}
-</head>
+  <link rel="stylesheet" href="/css/style.css">
+  </head>
 
 <body>
    {{{body}}}
@@ -18,8 +13,9 @@
         <script src="/js/{{this}}"></script>
     {{/each}}
     <header>
-    <h1> </h1>
+    <img src="Screenshot 2022-08-20 113649.jpg" alt= "logo of resort" nstyle= "width:100%;">
   </header>
+  
   <nav>
     <a href="/">HOME</a>
     <a href="/">ABOUT US</a>
@@ -29,9 +25,13 @@
     <a href="/">NEWS AND EVENTS</a>
     <a href="/">CONTACT</a>
   </nav>
-   <main> 
+   
+   <main>  
     <section>
-      <h1>Welcome to the Thai Hoa Mui Ne Resort</h1>
+  <div class= "mainText">
+    <img src="ICNIC_20220115_104012373.jpg" alt= "Beach"nstyle= "width:100%;"> 
+    <div class="centered"> Welcome to the Thai Hoa Mui Ne Resort </div>
+  </div>
     </section>
     <article>
       <h2 id="main">
@@ -41,9 +41,7 @@
     </article>
     </div>
     <br>
-   {{#if img_src}}
-    <img src="{{{img_src}}}" alt="scenic photo of ocean"/>
-  {{/if}}
+   <img src="cd4a72d7f1e634b86df729.jpg" alt= "veiw of ocean from pool" nstyle= "width:100%;">
    <br>
   </main>
 </body>
