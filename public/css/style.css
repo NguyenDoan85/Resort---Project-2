@@ -32,8 +32,21 @@ nav a {
   padding: 14px 16px;
   text-decoration: none;
   float: left;
+  background-color: #FAEE9C;
 }
 
 nav a :hover {
     color:#ff8914;
 }
+
+/* article {
+    padding: 46px 0 20px;
+    text-align: center;
+    color: #1c1b1b;
+    line-height: 1.8;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-style: normal;
+}
+ */

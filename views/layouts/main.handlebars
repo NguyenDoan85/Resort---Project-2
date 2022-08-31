@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thai Hoa Mui Ne Resort</title>
-  <link rel="stylesheet" href="/css/style.css">
+  {{#each css}}
+        <link rel="stylesheet" href="/css/{{this}}">
+    {{/each}}
+  {{!-- <link rel="stylesheet" href="/css/style.css"> 
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="..public/css/style.css">--}}
 </head>
 
 <body>
@@ -34,6 +39,7 @@
         <p id="main-right">All contributed to create a Thai Hoa Mui Ne Resort poetic, romantic and has bold imprint of a sea resort in the Central infamous hearts.</p>
       </h2>
     </article>
+    </div>
     <br>
    {{#if img_src}}
     <img src="{{{img_src}}}" alt="scenic photo of ocean"/>
