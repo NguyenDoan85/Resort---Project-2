@@ -15,6 +15,7 @@ h1 {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background:url() ;
 }
 
 header {
@@ -27,6 +28,7 @@ nav {
     padding: 0;
     overflow: hidden;
     background-color:  #FAEE9C;
+    text-align: center;
   }
 
 nav a {
@@ -43,7 +45,8 @@ nav :hover {
     color: #FF891E;
 }
 
-/* article {
+/*
+ article {
     padding: 46px 0 20px;
     text-align: center;
     color: #1c1b1b;
@@ -53,4 +56,4 @@ nav :hover {
     font-weight: normal;
     font-style: normal;
 }
- */
+/*
