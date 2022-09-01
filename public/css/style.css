@@ -15,7 +15,11 @@ h1 {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background:url(/public/images/background.jpeg) ;
+    background:url(/public/images/background.jpeg) no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }
 
 header {
