@@ -4,9 +4,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    text-align: center;
+}
+
 :root {
     --primary: ;
-    --secondary: ;
+    --secondary: 
 }
 
 body {
@@ -35,8 +39,8 @@ nav a {
   background-color: #FAEE9C;
 }
 
-nav a :hover {
-    color:#ff8914;
+nav :hover {
+    color: #FF891E;
 }
 
 /* article {
