@@ -1,34 +1,37 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class User extends Model {}
+class Table extends Model {}
 
-User.init(
+Table.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
     name: {
       type: DataTypes.STRING,
+      allowNull: false,
+    },
+    phone: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
       validate: {
         isEmail: true,
       },
     },
-    password: {
-      type: DataTypes.STRING,
+    res_time: {
+      type: DataTypes.TIME,
       allowNull: false,
-      validate: {
-        len: [8],
-      },
+    },
+    num_party: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    available: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      defaultValue: true,
     },
   },
   {
@@ -36,8 +39,8 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: 'table',
   }
 );
 
-module.exports = User;
+module.exports = Table;

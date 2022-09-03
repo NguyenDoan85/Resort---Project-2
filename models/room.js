@@ -5,26 +5,16 @@ class Room extends Model {}
 
 Room.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
+    available: {
+      type: DataTypes.BOOLEAN,
       allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
+      defaultValue: true
     },
-    name: {
-      type: DataTypes.STRING,
+    checkin: {
+      type: DataTypes.BOOLEAN,
       allowNull: false,
-    },
-    description: {
-      type: DataTypes.STRING,
-    },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
-    },
+      defaultValue: false
+    }
   },
   {
     sequelize,

@@ -1,13 +1,23 @@
-const User = require('./user');
+const Guest = require('./guest');
 const Room = require('./room');
+const Table = require('./table');
+const Manager = require('./manager');
 
-User.hasMany(Room, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE',
+Table.belongsTo(Guest, {
+  foreignKey: 'guest_id',
+  onDelete: 'cascade'
 });
 
-Room.belongsTo(User, {
-  foreignKey: 'user_id',
+Guest.hasOne(Room, {
+  foreignKey: 'room_id',
 });
 
-module.exports = { User, Room };
+Guest.hasOne(Table, {
+  foreignKey: 'table_id',
+});
+
+Room.belongsTo(Guest, {
+  foreignKey: 'guest_id',
+});
+
+module.exports = { Guest, Room, Table, Manager };
