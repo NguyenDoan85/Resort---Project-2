@@ -40,7 +40,7 @@ nav a :hover {
 }
 
 article {
-    padding: 46px 0 20px;
+    padding: 0px 0 0px;
     text-align: center;
     color: #1c1b1b;
     line-height: 1.8;
@@ -64,3 +64,11 @@ article {
      transform: translate(-50%, -50%);
     }
 
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+ 
+      
