@@ -1,22 +1,21 @@
-const path = require('path');
+// Dependencies
 const express = require('express');
-const session = require('express-session');
+const methodOverride = require('method-override');
+const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
-const routes = require('./controllers');
-const helpers = require('./utils/helpers');
-
-const publicPath = path.join(__dirname, '../public');
+const passport = require('passport');
+const session = require('express-session');
+const flash = require('connect-flash');
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
+// Sets up the Express App
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Set up Handlebars.js engine with custom helpers
-const hbs = exphbs.create({ helpers });
-
-app.use(express.static('/asset/imag/ThaiHoaPic'));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(methodOverride('_method'));
 
 const sess = {
   secret: 'Super secret secret',
@@ -35,16 +34,32 @@ const sess = {
 
 app.use(session(sess));
 
-// Inform Express.js on which template engine to use
-app.engine('handlebars', hbs.engine);
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
+// Serve files in 'public' directory
+app.use(express.static('public'));
 
-app.use(routes);
+// Load routes
+app.use(require('./controllers/index_controller'));
+app.use(require('./controllers/guest_controller'));
+app.use(require('./controllers/table_controller'));
 
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+require('./controllers/guest_auth_controller')(app, passport);
+require('./controllers/admin_auth_controller')(app, passport);
+require('./config/passport.js')(passport);
+
+app.use('/', function (req, res) {
+  res.render('index');
+});
+
+// Sync models then start the server to begin listening
+sequelize.sync({force: false}).then(() => {
+  app.listen(PORT, () => {
+    console.log('----------------------');
+    console.log('App listening on PORT ' + PORT);
+  });
 });
