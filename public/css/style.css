@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    background-color: #fffcee;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5DC;
+    font-family: fangsong;
 }
 
 :root {
@@ -33,9 +33,11 @@ nav a {
   text-decoration: none;
   float: left;
   background-color: #FAEE9C;
+  border-style: solid none none;
+  border-color: #dab529;
 }
 
-nav a :hover {
+nav :hover {
     color:#ff8914;
 }
 
@@ -63,6 +65,13 @@ article {
      left: 50%;
      transform: translate(-50%, -50%);
     }
+#home-text {
+    background-color: transparent;
+    color: white;
+    font-size: 33px;
+    text-decoration: white underline;
+    font-style: italic;
+}
 
 .center {
         display: block;
@@ -70,5 +79,9 @@ article {
         margin-right: auto;
         width: 50%;
       }
+button :hover {
+    color:#ff8914;
+}
+
  
       

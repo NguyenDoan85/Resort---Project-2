@@ -54,7 +54,7 @@ require('./controllers/admin_auth_controller')(app, passport);
 require('./config/passport.js')(passport);
 
 app.use('/', function (req, res) {
-  res.render('index');
+  res.render('homepage');
 });
 
 // Sync models then start the server to begin listening
