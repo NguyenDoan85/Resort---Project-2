@@ -5,6 +5,8 @@
 
 h1 {
     text-align: center;
+    background-color: #fffcee;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -49,16 +51,16 @@ nav :hover {
     color: #FF891E;
 }
 
-
- article {
+article {
     padding: 46px 0 20px;
     text-align: center;
     color: #1c1b1b;
     line-height: 1.8;
     font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 1 rem;
     font-weight: normal;
     font-style: normal;
+    background-color: #fffcee;
 }
 
 
@@ -101,3 +103,18 @@ nav :hover {
   
  
   .dropdown:hover .dropbtn {background-color: #FAEE9C;}
+
+.mainText {
+     position: relative;
+     text-align: center;
+     color: white;
+    }
+
+    .centered {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+    }
+
+
