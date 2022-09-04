@@ -2,6 +2,7 @@
     box-sizing: border-box;
     background-color: #F5F5DC;
     font-family: fangsong;
+    line-height: 32px;
 }
 
 :root {
@@ -10,7 +11,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: fangsong;
 }
 
 header {
@@ -44,13 +45,8 @@ nav :hover {
 article {
     padding: 0px 0 0px;
     text-align: center;
-    color: #1c1b1b;
-    line-height: 1.8;
     font-size: 14px;
-    font-size: 1 rem;
-    font-weight: normal;
     font-style: normal;
-    background-color: #fffcee;
 }
  
 .mainText {
@@ -81,6 +77,29 @@ article {
       }
 button :hover {
     color:#ff8914;
+}
+ 
+#p-top  {
+    width: 700px; 
+    margin: auto; 
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+}
+
+#about-p
+{
+    width: 1000px; 
+    margin: auto; 
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#whyresort {
+    font-weight: lighter;
+    padding-top: 25px;
 }
 
  
