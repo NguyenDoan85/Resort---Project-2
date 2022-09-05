@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
-    background-color: #fffcee;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5DC;
+    font-family: fangsong;
+    line-height: 32px;
 }
 
 :root {
@@ -10,7 +11,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: fangsong;
 }
 
 header {
@@ -33,22 +34,19 @@ nav a {
   text-decoration: none;
   float: left;
   background-color: #FAEE9C;
+  border-style: solid none none;
+  border-color: #dab529;
 }
 
-nav a :hover {
+nav :hover {
     color:#ff8914;
 }
 
 article {
-    padding: 46px 0 20px;
+    padding: 0px 0 0px;
     text-align: center;
-    color: #1c1b1b;
-    line-height: 1.8;
     font-size: 14px;
-    font-size: 1 rem;
-    font-weight: normal;
     font-style: normal;
-    background-color: #fffcee;
 }
  
 .mainText {
@@ -63,4 +61,46 @@ article {
      left: 50%;
      transform: translate(-50%, -50%);
     }
+#home-text {
+    background-color: transparent;
+    color: white;
+    font-size: 33px;
+    text-decoration: white underline;
+    font-style: italic;
+}
 
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+button :hover {
+    color:#ff8914;
+}
+ 
+#p-top  {
+    width: 700px; 
+    margin: auto; 
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+}
+
+#about-p
+{
+    width: 1000px; 
+    margin: auto; 
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#whyresort {
+    font-weight: lighter;
+    padding-top: 25px;
+}
+
+ 
+      
