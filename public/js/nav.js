@@ -6,3 +6,4 @@ fetch('nav.handlebars')
     newelem.innerHTML = text;
     oldelem.parentNode.replaceChild(newelem,oldelem);
 })
+
