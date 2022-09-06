@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
-    background-color: #F5F5DC;
     font-family: fangsong;
-    line-height: 32px;
+   /*  line-height: 32px; */
 }
 
 :root {
@@ -12,6 +11,7 @@
 
 body {
     font-family: fangsong;
+    background-color: #F5F5DC;
 }
 
 header {
@@ -21,9 +21,11 @@ background-color: #FAEE9C;
 nav {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     overflow: hidden;
     background-color:  #FAEE9C;
+    width: 100%;
+    overflow: auto;
   }
 
 nav a {
@@ -31,6 +33,7 @@ nav a {
   color: black;
   text-align: center;
   padding: 14px 16px;
+  width: 25%;
   text-decoration: none;
   float: left;
   background-color: #FAEE9C;
@@ -95,11 +98,13 @@ button :hover {
     padding: 30px;
     font-size: 20px;
     font-weight: 100;
+    line-height: 32px;
 }
 
 #whyresort {
     font-weight: lighter;
     padding-top: 25px;
+    line-height: 32px;
 }
 
 #cards {
@@ -119,7 +124,15 @@ button :hover {
     display: table;
   }
 
+th, td {
+    padding: 15px 60px;
+    text-align: center;
+    font-weight: lighter;
+  }
   
+  table {
+    width: 100%;
+  }
 
  
       
