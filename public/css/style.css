@@ -1,20 +1,21 @@
 * {
-    box-sizing: border-box;
-    font-family: fangsong;
-    /*  line-height: 32px; */
+  box-sizing: border-box;
+  font-family: fangsong;
+  /*  line-height: 32px; */
 }
 
 :root {
-    --primary: ;
-    --secondary: ;
+  --primary: ;
+  --secondary: ;
 }
 
 body {
-    font-family: fangsong;
-    background-color: #F5F5DC;
+  font-family: fangsong;
+  background-color: #f5f5dc;
 }
 
 header {
+
     background-color: #FAEE9C;
 }
 
@@ -52,92 +53,97 @@ nav :hover {
 }
 
 article {
-    padding: 0px 0 0px;
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
+  padding: 0px 0 0px;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
 }
 
 .mainText {
-    position: relative;
-    text-align: center;
-    color: white;
+  /* position: relative; */
+  text-align: center;
+  color: white;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #home-text {
-    background-color: transparent;
-    color: white;
-    font-size: 33px;
-    text-decoration: white underline;
-    font-style: italic;
+  background-color: transparent;
+  color: white;
+  font-size: 33px;
+  text-decoration: white underline;
+  font-style: italic;
 }
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
-
 button :hover {
-    color: #ff8914;
+  color: #ff8914;
 }
 
 #p-top {
-    width: 700px;
-    margin: auto;
-    text-align: center;
-    padding: 40px;
-    font-size: 20px;
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+  font-size: 20px;
 }
 
 #about-p {
-    width: 1000px;
-    margin: auto;
-    text-align: center;
-    padding: 30px;
-    font-size: 20px;
-    font-weight: 100;
-    line-height: 32px;
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 32px;
 }
 
 #whyresort {
-    font-weight: lighter;
-    padding-top: 25px;
-    line-height: 32px;
+  font-weight: lighter;
+  padding-top: 25px;
+  line-height: 32px;
 }
 
 #cards {
-    left: 25%;
-    padding: 10px;
+  left: 25%;
+  padding: 10px;
 }
 
 .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: '';
+  clear: both;
+  display: table;
 }
 
 th,
 td {
-    padding: 15px 60px;
-    text-align: center;
-    font-weight: lighter;
+  padding: 15px 60px;
+  text-align: center;
+  font-weight: lighter;
 }
 
 table {
-    width: 100%;
+  width: 100%;
 }

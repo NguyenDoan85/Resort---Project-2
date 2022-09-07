@@ -9,21 +9,22 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
 
-<body>
-   {{{body}}}
+<body>  
     {{#each js}}
         <script src="/js/{{this}}"></script>
     {{/each}}
     <header>
-    <img src="img/Screenshot 2022-08-20 113649.jpg" alt= "logo of resort" class="center" style="width:8em; height:8em;">
+    <img src="../../img/Screenshot 2022-08-20 113649.jpg" alt= "logo of resort" class="center" style="width:8em; height:8em;">
   
   <nav>
     <a href="/">HOME</a>
+
     <a href="html/aboutUs.html" target="_self">ABOUT US</a>
+    <a href="/guest/login">LOGIN</a>
     <a href="html/rooms.html">ROOMS</a>
     <a href="/room/book">RESERVATION</a>
     <a href="/tables">RESTAURANT</a>
-    <a href="/html/terms.html">TERMS AND POLICIES</a>
+    <a href="html/terms.html">TERMS AND POLICIES</a>
     <a href="/">NEWS AND EVENTS</a>
     <a href="html/contact.html">CONTACT</a>
   </nav>  
@@ -32,9 +33,10 @@
    <main>  
     <section>
   <div class= "mainText">
-    <img src="img\palms-sunset.jpg" alt= "palm trees" style="width:86em; height:20em; object-fit:cover;"> 
+    <img src="../../img/palms-sunset.jpg" alt= "palm trees" style="width:86em; height:20em; object-fit:cover;"> 
     <div class="centered" id="home-text"> Welcome to the Thai Hoa Mui Ne Resort </div>
-  </div>
+   {{{body}}}
+   </div>
     </section>
     <article>
     <h2 id="whyresort">
@@ -45,5 +47,6 @@
         All contributed to create a Thai Hoa Mui Ne Resort poetic, romantic and has bold imprint of a sea resort in the Central infamous hearts.
     </h3>
     </div>
-  </main>
+  </main> 
+ 
 </body>
