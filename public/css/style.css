@@ -62,13 +62,13 @@ article {
 .mainText {
   /* position: relative; */
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .container {
   position: relative;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .centered {
